@@ -10,7 +10,6 @@ namespace SuiviVaccinCovidCodeFirst
     {
         public DbSet<Vaccin> Vaccins { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=VaccinBD;Trusted_Connection = True;");
- }
-
+        => options.UseSqlServer("Server=deptinfo420;Database=VaccinBDBilly;Trusted_Connection=True;");
+    }
 }
